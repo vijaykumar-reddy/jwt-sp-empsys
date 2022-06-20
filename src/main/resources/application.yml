@@ -1,0 +1,21 @@
+
+server:
+  servlet:
+    context-path: /employee/sys
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    password: root
+    url: jdbc:postgresql://localhost:5432/test_db
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    
+logging:
+  level:
+    org.springframework.web: DEBUG
